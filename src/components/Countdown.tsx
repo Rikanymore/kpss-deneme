@@ -9,10 +9,10 @@ export default function Countdown({ targetDate }: { targetDate: string }) {
 
     if (difference > 0) {
       timeLeft = {
-        gun: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        Saat: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        DAKIKA: Math.floor((difference / 1000 / 60) % 60),
-        SANIYE: Math.floor((difference / 1000) % 60),
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
       };
     }
     return timeLeft;
