@@ -1,6 +1,7 @@
 // src/app/page.tsx
 import Link from "next/link";
 import { examsData } from "../data/examsData";
+import Countdown from "../components/Countdown"; 
 
 export default function HomePage() {
   // Benzersiz ders listesini çıkaralım
@@ -9,6 +10,8 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-slate-50 py-12 px-4 font-sans">
       <div className="max-w-5xl mx-auto">
+        {/* SAYAÇ BURADA */}
+        <Countdown targetDate="2026-09-06T00:00:00" />
         
         {/* Hero Section */}
         <div className="text-center mb-12">
